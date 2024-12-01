@@ -20,3 +20,4 @@ from Fact_OrderItems oi
 group by oi.seller_id
 order by total_revenue desc
 
+select min(order_purchase_timestamp), min(order_approved_at), max (order_purchase_timestamp), max(order_approved_at) from Dim_Orders
